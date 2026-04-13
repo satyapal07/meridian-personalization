@@ -81,7 +81,7 @@ Same revenue streams as direct signup, but applied to the referred customer. Sli
 
 Getting all six LTV numbers agreed required:
 
-- **Finance** to validate the discount rate, the incremental spend attribution methodology, and the bounty numbers (which were confidential)
+- **Finance** to validate the discount rate, the incremental spend attribution methodology, and the acquisition economics for each offer type
 - **Data science** to run the cohort analyses for spend lift and retention
 - **Product** to agree on the 12-month horizon and the definition of "incremental"
 - **Risk** to confirm that approval rate assumptions embedded in the LTV calculations were consistent with their models

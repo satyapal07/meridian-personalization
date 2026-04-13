@@ -10,7 +10,7 @@ They show you a collaborative filtering diagram, mention embeddings, maybe refer
 
 This document is about the hard parts.
 
-I spent four years building payment offer personalization at Amazon. This is a technical breakdown of what that system actually looked like — the architecture, the decisions, the tradeoffs, and the organizational constraints that shaped every technical choice. Nothing here is proprietary. These are industry patterns. The fact that I know them in this depth is because I was inside building them.
+I spent four years building payment offer personalization systems at scale. This is a technical breakdown of what those systems look like — the architecture, the decisions, the tradeoffs, and the organizational constraints that shape every technical choice. These are industry patterns. The fact that I know them in this depth is because I was inside building them.
 
 ---
 
@@ -42,7 +42,7 @@ Each page surface has a defined real estate slot with exact specifications: dime
 
 This is a deliberate product decision. Compliance checking happens at submission time, not at inference time. By the time a request hits the ranking system, every offer in the candidate pool has already been validated. No compliance logic runs inside the latency budget.
 
-The side effect: a Prime Visa team wanting presence across all four surfaces has to manage four separate creative submissions. That's friction. It's the right tradeoff.
+The side effect: a co-branded card team wanting presence across all four surfaces has to manage four separate creative submissions. That's friction. It's the right tradeoff.
 
 **What content characteristics become model features:**
 - Creative format (banner, inline, modal)
@@ -67,7 +67,7 @@ Eligibility checks include:
 - Is the offer within its campaign window?
 - Does the customer meet the targeting criteria?
 
-This filtering happens before the model runs. A customer who already has the co-branded credit card will never see the credit card acquisition offer — it never enters the candidate set. The model never wastes a score on it.
+This filtering happens before the model runs. A customer who already has the co-branded card will never see the card acquisition offer — it never enters the candidate set. The model never wastes a score on it.
 
 The candidate set size varies significantly. A new customer in the US marketplace at checkout might have five eligible offers. A power user in a thin marketplace might have two. This variation matters for the model — which we'll get to — and it matters for something called **supply health**, which is a metric most teams don't watch until it's too late.
 
@@ -168,14 +168,14 @@ Training a model is not shipping a product. The serving layer is where the produ
 **The request path:**
 
 1. Customer loads a page — ranking request fires
-2. HAF (High Availability Framework) routes the request to the correct model based on marketplace × page key
+2. A high-availability routing layer dispatches the request to the correct model based on marketplace × page key
 3. In parallel: feature lookup fetches 40+ feature values from DynamoDB/ElastiCache (~8ms), model endpoint scores all eligible offers (~15ms)
 4. Ranking service combines scores, applies business rules, returns top-1 offer
 5. Total path: < 50ms p99
 
-**Latency is a product requirement, not an engineering preference.** Page render waits for the ranking response. If ranking adds 200ms to page load, that's a measurable conversion impact — which means the retail team has a legitimate complaint. The p99 latency SLA is enforced by HAF, not hoped for by engineering.
+**Latency is a product requirement, not an engineering preference.** Page render waits for the ranking response. If ranking adds 200ms to page load, that's a measurable conversion impact — which means the retail team has a legitimate complaint. The p99 latency SLA is enforced by the routing layer, not hoped for by engineering.
 
-**Fallback logic matters more than you'd think.** When a SageMaker endpoint is slow or unavailable, HAF falls back to the last known ranking or a static default. No blank slot on the page. No error state visible to the customer. Graceful degradation is designed in, not bolted on after an incident.
+**Fallback logic matters more than you'd think.** When a SageMaker endpoint is slow or unavailable, the routing layer falls back to the last known ranking or a static default. No blank slot on the page. No error state visible to the customer. Graceful degradation is designed in, not bolted on after an incident.
 
 ---
 
@@ -258,7 +258,7 @@ meridian-personalization/
 
 ## About
 
-**Satya** — Senior Product Manager with four years building ML-powered personalization and payment systems at Amazon. Currently exploring AI PM roles at companies building at the intersection of commerce, payments, and machine learning.
+**Satya** — Senior Product Manager with four years building ML-powered personalization and payment systems at scale. Currently exploring AI PM roles at companies building at the intersection of commerce, payments, and machine learning.
 
 [LinkedIn](https://linkedin.com/in/your-profile)
 
