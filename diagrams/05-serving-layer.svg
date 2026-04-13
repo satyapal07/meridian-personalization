@@ -1,106 +1,106 @@
-<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, 'Cascadia Code', monospace">
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, sans-serif">
   <rect width="900" height="480" fill="#ffffff" rx="12"/>
 
-  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a2e">Serving Layer — Request Path and Monitoring</text>
-  <text x="450" y="56" text-anchor="middle" font-size="11" fill="#666677">From page load to ranked offer — under 50ms p99 — with fallback and three-metric monitoring</text>
+  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Serving Layer — Request Path and Monitoring</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="#6b7280">From page load to ranked offer — under 50ms p99 — with fallback and three-metric monitoring</text>
 
   <!-- Request path -->
-  <text x="46" y="82" font-size="10" fill="#666677" font-weight="500" letter-spacing="1">REAL-TIME REQUEST PATH</text>
+  <text x="46" y="82" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">REAL-TIME REQUEST PATH</text>
 
   <!-- Page trigger -->
-  <rect x="30" y="92" width="140" height="52" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
-  <text x="100" y="114" text-anchor="middle" font-size="11" font-weight="500" fill="#555566">Page loads</text>
-  <text x="100" y="132" text-anchor="middle" font-size="9" fill="#888899">ranking request fires</text>
+  <rect x="30" y="92" width="140" height="52" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="100" y="114" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Page loads</text>
+  <text x="100" y="132" text-anchor="middle" font-size="9" fill="#9ca3af">ranking request fires</text>
 
-  <line x1="170" y1="118" x2="200" y2="118" stroke="#999999" stroke-width="1.5" marker-end="url(#arr3)"/>
+  <line x1="170" y1="118" x2="200" y2="118" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arr3)"/>
 
   <!-- Serving Layer -->
-  <rect x="200" y="92" width="160" height="52" rx="6" fill="#f0f0f8" stroke="#993C1D" stroke-width="1.5"/>
+  <rect x="200" y="92" width="160" height="52" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1.5"/>
   <text x="280" y="114" text-anchor="middle" font-size="11" font-weight="600" fill="#882010">Ranking Layer</text>
   <text x="280" y="132" text-anchor="middle" font-size="9" fill="#882010">routes · enforces SLA</text>
 
   <!-- parallel fork -->
-  <line x1="360" y1="118" x2="400" y2="118" stroke="#999999" stroke-width="1" marker-end="url(#arr3)"/>
-  <line x1="380" y1="118" x2="380" y2="86" stroke="#999999" stroke-width="1"/>
-  <line x1="380" y1="86" x2="560" y2="86" stroke="#999999" stroke-width="1"/>
-  <line x1="560" y1="86" x2="560" y2="92" stroke="#999999" stroke-width="1" marker-end="url(#arr3)"/>
-  <text x="470" y="80" text-anchor="middle" font-size="9" fill="#888899">parallel</text>
+  <line x1="360" y1="118" x2="400" y2="118" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr3)"/>
+  <line x1="380" y1="118" x2="380" y2="86" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="380" y1="86" x2="560" y2="86" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="560" y1="86" x2="560" y2="92" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr3)"/>
+  <text x="470" y="80" text-anchor="middle" font-size="9" fill="#9ca3af">parallel</text>
 
   <!-- Feature lookup -->
-  <rect x="400" y="92" width="150" height="52" rx="6" fill="#f0f0f8" stroke="#854F0B" stroke-width="1"/>
+  <rect x="400" y="92" width="150" height="52" rx="6" fill="#f9fafb" stroke="#854F0B" stroke-width="1"/>
   <text x="475" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#7a4800">Feature lookup</text>
   <text x="475" y="128" text-anchor="middle" font-size="9" fill="#7a4800">DynamoDB + cache</text>
   <text x="475" y="142" text-anchor="middle" font-size="9" fill="#7a4800">~8ms</text>
 
   <!-- Model endpoint -->
-  <rect x="560" y="92" width="150" height="52" rx="6" fill="#f0f0f8" stroke="#534AB7" stroke-width="1"/>
+  <rect x="560" y="92" width="150" height="52" rx="6" fill="#f9fafb" stroke="#534AB7" stroke-width="1"/>
   <text x="635" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#4a41b0">Model endpoint</text>
   <text x="635" y="128" text-anchor="middle" font-size="9" fill="#4a41b0">1 of 180 selected</text>
   <text x="635" y="142" text-anchor="middle" font-size="9" fill="#4a41b0">~15ms</text>
 
   <!-- merge to ranking -->
-  <line x1="550" y1="118" x2="580" y2="118" stroke="#999999" stroke-width="1"/>
-  <line x1="475" y1="144" x2="475" y2="166" stroke="#999999" stroke-width="1"/>
-  <line x1="635" y1="144" x2="635" y2="166" stroke="#999999" stroke-width="1"/>
-  <line x1="475" y1="166" x2="635" y2="166" stroke="#999999" stroke-width="1"/>
-  <line x1="555" y1="166" x2="555" y2="186" stroke="#999999" stroke-width="1" marker-end="url(#arr3)"/>
+  <line x1="550" y1="118" x2="580" y2="118" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="475" y1="144" x2="475" y2="166" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="635" y1="144" x2="635" y2="166" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="475" y1="166" x2="635" y2="166" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="555" y1="166" x2="555" y2="186" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr3)"/>
 
   <!-- Ranking service -->
-  <rect x="400" y="186" width="310" height="52" rx="6" fill="#f0f0f8" stroke="#185FA5" stroke-width="1.5"/>
+  <rect x="400" y="186" width="310" height="52" rx="6" fill="#f9fafb" stroke="#185FA5" stroke-width="1.5"/>
   <text x="555" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#1a5a9a">Ranking service</text>
   <text x="555" y="226" text-anchor="middle" font-size="9" fill="#1a5a9a">score all eligible → business rules → top-1</text>
 
   <!-- fork to served / fallback -->
   <line x1="475" y1="238" x2="380" y2="278" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr3g)"/>
-  <line x1="635" y1="238" x2="730" y2="278" stroke="#999999" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arr3)"/>
+  <line x1="635" y1="238" x2="730" y2="278" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arr3)"/>
 
   <!-- Served -->
-  <rect x="280" y="278" width="190" height="52" rx="6" fill="#f0f0f8" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="280" y="278" width="190" height="52" rx="6" fill="#f9fafb" stroke="#22c55e" stroke-width="1.5"/>
   <text x="375" y="300" text-anchor="middle" font-size="11" font-weight="600" fill="#16a34a">Offer served</text>
   <text x="375" y="318" text-anchor="middle" font-size="9" fill="#16a34a">within p99 SLA ✓</text>
 
   <!-- Fallback -->
-  <rect x="636" y="278" width="234" height="52" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
-  <text x="753" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#555566">Fallback (timeout)</text>
-  <text x="753" y="318" text-anchor="middle" font-size="9" fill="#888899">last known ranking or static default</text>
+  <rect x="636" y="278" width="234" height="52" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="753" y="300" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Fallback (timeout)</text>
+  <text x="753" y="318" text-anchor="middle" font-size="9" fill="#9ca3af">last known ranking or static default</text>
 
   <!-- Timing annotation -->
-  <rect x="30" y="186" width="330" height="144" rx="6" fill="#f0f0f8" stroke="#d0d0e0" stroke-width="1"/>
-  <text x="195" y="210" text-anchor="middle" font-size="11" font-weight="600" fill="#555566">Request timing budget</text>
-  <text x="60" y="238" font-size="10" fill="#888899">Eligibility filter</text>
+  <rect x="30" y="186" width="330" height="144" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="195" y="210" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">Request timing budget</text>
+  <text x="60" y="238" font-size="10" fill="#9ca3af">Eligibility filter</text>
   <text x="330" y="238" text-anchor="end" font-size="10" fill="#16a34a">~2ms</text>
-  <text x="60" y="258" font-size="10" fill="#888899">Feature lookup (online store)</text>
+  <text x="60" y="258" font-size="10" fill="#9ca3af">Feature lookup (online store)</text>
   <text x="330" y="258" text-anchor="end" font-size="10" fill="#16a34a">~8ms</text>
-  <text x="60" y="278" font-size="10" fill="#888899">Model inference</text>
+  <text x="60" y="278" font-size="10" fill="#9ca3af">Model inference</text>
   <text x="330" y="278" text-anchor="end" font-size="10" fill="#16a34a">~15ms</text>
-  <text x="60" y="298" font-size="10" fill="#888899">Ranking + business rules</text>
+  <text x="60" y="298" font-size="10" fill="#9ca3af">Ranking + business rules</text>
   <text x="330" y="298" text-anchor="end" font-size="10" fill="#16a34a">~3ms</text>
-  <line x1="60" y1="308" x2="330" y2="308" stroke="#d0d0e0" stroke-width="1"/>
-  <text x="60" y="322" font-size="10" font-weight="600" fill="#555566">Total p50</text>
+  <line x1="60" y1="308" x2="330" y2="308" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="60" y="322" font-size="10" font-weight="600" fill="#374151">Total p50</text>
   <text x="330" y="322" text-anchor="end" font-size="10" font-weight="600" fill="#16a34a">~28ms</text>
 
   <!-- Monitoring -->
-  <line x1="30" y1="360" x2="870" y2="360" stroke="#d0d0e0" stroke-width="1"/>
-  <text x="46" y="380" font-size="10" fill="#666677" font-weight="500" letter-spacing="1">THREE-METRIC MONITORING STACK</text>
+  <line x1="30" y1="360" x2="870" y2="360" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="46" y="380" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">THREE-METRIC MONITORING STACK</text>
 
-  <rect x="30" y="392" width="256" height="72" rx="6" fill="#f0f0f8" stroke="#993C1D" stroke-width="1"/>
+  <rect x="30" y="392" width="256" height="72" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
   <text x="158" y="414" text-anchor="middle" font-size="12" font-weight="600" fill="#882010">AUPRC</text>
   <text x="158" y="434" text-anchor="middle" font-size="10" fill="#882010">Ranking quality on imbalanced data</text>
   <text x="158" y="452" text-anchor="middle" font-size="9" fill="#882010">Most impressions don't convert</text>
 
-  <rect x="322" y="392" width="256" height="72" rx="6" fill="#f0f0f8" stroke="#993C1D" stroke-width="1"/>
+  <rect x="322" y="392" width="256" height="72" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
   <text x="450" y="414" text-anchor="middle" font-size="12" font-weight="600" fill="#882010">AURC</text>
   <text x="450" y="434" text-anchor="middle" font-size="10" fill="#882010">Risk-coverage curve quality</text>
   <text x="450" y="452" text-anchor="middle" font-size="9" fill="#882010">Selective prediction — when to abstain</text>
 
-  <rect x="614" y="392" width="256" height="72" rx="6" fill="#f0f0f8" stroke="#993C1D" stroke-width="1"/>
+  <rect x="614" y="392" width="256" height="72" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
   <text x="742" y="414" text-anchor="middle" font-size="12" font-weight="600" fill="#882010">PBR</text>
   <text x="742" y="434" text-anchor="middle" font-size="10" fill="#882010">Prediction Bias Ratio</text>
   <text x="742" y="452" text-anchor="middle" font-size="9" fill="#882010">predicted ÷ observed CTR — calibration</text>
 
   <defs>
     <marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#999999" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
     </marker>
     <marker id="arr3g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M2 1L8 5L2 9" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round"/>
