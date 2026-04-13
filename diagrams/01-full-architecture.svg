@@ -1,168 +1,167 @@
-<svg width="900" height="980" viewBox="0 0 900 980" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, sans-serif">
+<svg width="900" height="960" viewBox="0 0 900 960" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, sans-serif">
+  <rect width="900" height="960" fill="#ffffff" rx="12"/>
+
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
     </marker>
-    <marker id="arrow-accent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#4a40cc" stroke-width="1.5" stroke-linecap="round"/>
+    <marker id="arr-accent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     </marker>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="980" fill="#ffffff" rx="12"/>
-
   <!-- Title -->
-  <text x="450" y="40" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Payment Offer Personalization — Full System Architecture</text>
-  <text x="450" y="60" text-anchor="middle" font-size="11" fill="#6b7280">7 layers from marketer CMS to customer page — all running in under 50ms</text>
+  <text x="450" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">Payment Offer Personalization — Full System Architecture</text>
+  <text x="450" y="58" text-anchor="middle" font-size="12" fill="#6b7280">7 layers from marketer CMS to customer page — all running in under 50ms</text>
 
-  <!-- ── LAYER 1: CONTENT ── -->
-  <rect x="30" y="80" width="840" height="110" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="46" y="98" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">LAYER 1 — CONTENT CREATION &amp; COMPLIANCE</text>
-  <rect x="50" y="106" width="180" height="70" rx="6" fill="#f9fafb" stroke="#534AB7" stroke-width="1"/>
-  <text x="140" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#4a41b0">Internal CMS</text>
-  <text x="140" y="148" text-anchor="middle" font-size="10" fill="#4a41b0">Marketer submits</text>
-  <text x="140" y="162" text-anchor="middle" font-size="10" fill="#4a41b0">offer + creative</text>
+  <!-- ── LAYER 1 ── -->
+  <rect x="30" y="70" width="840" height="106" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="46" y="88" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">LAYER 1 — CONTENT CREATION &amp; COMPLIANCE</text>
 
-  <rect x="260" y="106" width="200" height="70" rx="6" fill="#f9fafb" stroke="#534AB7" stroke-width="1"/>
-  <text x="360" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#4a41b0">Design Compliance</text>
-  <text x="360" y="148" text-anchor="middle" font-size="10" fill="#4a41b0">Checked at preview time</text>
-  <text x="360" y="162" text-anchor="middle" font-size="10" fill="#4a41b0">per surface slot spec</text>
+  <rect x="48" y="96" width="168" height="66" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="132" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">Internal CMS</text>
+  <text x="132" y="135" text-anchor="middle" font-size="10" fill="#6d28d9">Marketer submits</text>
+  <text x="132" y="150" text-anchor="middle" font-size="10" fill="#6d28d9">offer + creative</text>
 
-  <rect x="490" y="106" width="180" height="70" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="580" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#374151">Surface Slots</text>
-  <text x="580" y="148" text-anchor="middle" font-size="10" fill="#9ca3af">PDP / Cart / Checkout</text>
-  <text x="580" y="162" text-anchor="middle" font-size="10" fill="#9ca3af">Separate offer per surface</text>
+  <rect x="236" y="96" width="192" height="66" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="332" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">Design Compliance</text>
+  <text x="332" y="135" text-anchor="middle" font-size="10" fill="#6d28d9">Checked at preview time</text>
+  <text x="332" y="150" text-anchor="middle" font-size="10" fill="#6d28d9">per surface slot spec</text>
 
-  <rect x="700" y="106" width="160" height="70" rx="6" fill="#f9fafb" stroke="#854F0B" stroke-width="1"/>
-  <text x="780" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#7a4800">Content Features</text>
-  <text x="780" y="148" text-anchor="middle" font-size="10" fill="#7a4800">Format, copy type</text>
-  <text x="780" y="162" text-anchor="middle" font-size="10" fill="#7a4800">→ written to feature store</text>
+  <rect x="448" y="96" width="168" height="66" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="532" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">Surface Slots</text>
+  <text x="532" y="135" text-anchor="middle" font-size="10" fill="#6b7280">PDP / Cart / Checkout</text>
+  <text x="532" y="150" text-anchor="middle" font-size="10" fill="#6b7280">Separate offer per surface</text>
 
-  <line x1="230" y1="141" x2="260" y2="141" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="460" y1="141" x2="490" y2="141" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="670" y1="141" x2="700" y2="141" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
+  <rect x="636" y="96" width="196" height="66" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
+  <text x="734" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Content Features</text>
+  <text x="734" y="135" text-anchor="middle" font-size="10" fill="#78350f">Format, copy type</text>
+  <text x="734" y="150" text-anchor="middle" font-size="10" fill="#78350f">→ written to feature store</text>
 
-  <!-- ── LAYER 2: CATALOG ── -->
-  <line x1="360" y1="176" x2="360" y2="210" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="780" y1="176" x2="780" y2="210" stroke="#854F0B" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+  <line x1="216" y1="129" x2="234" y2="129" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="428" y1="129" x2="446" y2="129" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="616" y1="129" x2="634" y2="129" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
 
-  <rect x="30" y="210" width="840" height="90" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="46" y="228" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">LAYER 2 — OFFER CATALOG &amp; ELIGIBILITY</text>
+  <!-- ── LAYER 2 ── -->
+  <line x1="332" y1="176" x2="332" y2="202" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="734" y1="176" x2="734" y2="202" stroke="#d97706" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arr)"/>
 
-  <rect x="50" y="236" width="340" height="52" rx="6" fill="#f9fafb" stroke="#0F6E56" stroke-width="1"/>
-  <text x="220" y="258" text-anchor="middle" font-size="12" font-weight="600" fill="#0a6a4a">Offer Catalog</text>
-  <text x="220" y="274" text-anchor="middle" font-size="10" fill="#0a6a4a">S3 / DynamoDB — indexed by surface × marketplace</text>
+  <rect x="30" y="204" width="840" height="82" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="46" y="222" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">LAYER 2 — OFFER CATALOG &amp; ELIGIBILITY</text>
 
-  <rect x="420" y="236" width="420" height="52" rx="6" fill="#f9fafb" stroke="#0F6E56" stroke-width="1"/>
-  <text x="630" y="258" text-anchor="middle" font-size="12" font-weight="600" fill="#0a6a4a">Eligibility Service</text>
-  <text x="630" y="274" text-anchor="middle" font-size="10" fill="#0a6a4a">Active? Already signed up? Campaign window? → Candidate set</text>
+  <rect x="48" y="230" width="320" height="46" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="208" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">Offer Catalog</text>
+  <text x="208" y="266" text-anchor="middle" font-size="10" fill="#166534">S3 / DynamoDB — indexed by surface × marketplace</text>
 
-  <line x1="390" y1="262" x2="420" y2="262" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="450" y1="300" x2="450" y2="330" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
+  <rect x="388" y="230" width="454" height="46" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="615" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">Eligibility Service</text>
+  <text x="615" y="266" text-anchor="middle" font-size="10" fill="#166534">Active? Already signed up? Campaign window? → Candidate set</text>
 
-  <!-- ── LAYER 3: FEATURE STORE ── -->
-  <rect x="30" y="330" width="840" height="120" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="46" y="348" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">LAYER 3 — FEATURE STORE</text>
+  <line x1="368" y1="253" x2="386" y2="253" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="450" y1="286" x2="450" y2="308" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
 
-  <rect x="50" y="356" width="380" height="80" rx="6" fill="#f9fafb" stroke="#185FA5" stroke-width="1"/>
-  <text x="240" y="378" text-anchor="middle" font-size="12" font-weight="600" fill="#1a5a9a">Offline Store (S3 / Parquet)</text>
-  <text x="240" y="396" text-anchor="middle" font-size="10" fill="#1a5a9a">Historical snapshots — point-in-time correct joins</text>
-  <text x="240" y="412" text-anchor="middle" font-size="10" fill="#1a5a9a">Batch updated nightly via Spark / Glue</text>
+  <!-- ── LAYER 3 ── -->
+  <rect x="30" y="310" width="840" height="110" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="46" y="328" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">LAYER 3 — FEATURE STORE</text>
 
-  <rect x="460" y="356" width="380" height="80" rx="6" fill="#f9fafb" stroke="#854F0B" stroke-width="1"/>
-  <text x="650" y="378" text-anchor="middle" font-size="12" font-weight="600" fill="#7a4800">Online Store (DynamoDB / Redis)</text>
-  <text x="650" y="396" text-anchor="middle" font-size="10" fill="#7a4800">Current values only — sub-10ms lookup</text>
-  <text x="650" y="412" text-anchor="middle" font-size="10" fill="#7a4800">Streaming updates via Kinesis — seconds-fresh</text>
+  <rect x="48" y="336" width="374" height="72" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="235" y="358" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">Offline Store (S3 / Parquet)</text>
+  <text x="235" y="375" text-anchor="middle" font-size="10" fill="#3730a3">Historical snapshots — point-in-time correct joins</text>
+  <text x="235" y="391" text-anchor="middle" font-size="10" fill="#3730a3">Batch updated nightly via Spark / Glue</text>
 
-  <line x1="240" y1="436" x2="240" y2="470" stroke="#185FA5" stroke-width="1" marker-end="url(#arrow)"/>
-  <line x1="650" y1="436" x2="650" y2="470" stroke="#854F0B" stroke-width="1" marker-end="url(#arrow)"/>
+  <rect x="442" y="336" width="380" height="72" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
+  <text x="632" y="358" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Online Store (DynamoDB / Redis)</text>
+  <text x="632" y="375" text-anchor="middle" font-size="10" fill="#78350f">Current values only — sub-10ms lookup</text>
+  <text x="632" y="391" text-anchor="middle" font-size="10" fill="#78350f">Streaming updates via Kinesis — seconds-fresh</text>
 
-  <!-- ── LAYER 4: TRAINING ── -->
-  <rect x="30" y="470" width="400" height="110" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="46" y="488" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">LAYER 4 — TRAINING (DAILY)</text>
+  <line x1="235" y1="420" x2="235" y2="446" stroke="#2563eb" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="632" y1="420" x2="632" y2="446" stroke="#d97706" stroke-width="1" marker-end="url(#arr)"/>
 
-  <rect x="50" y="496" width="180" height="70" rx="6" fill="#f9fafb" stroke="#534AB7" stroke-width="1"/>
-  <text x="140" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#4a41b0">SageMaker Jobs</text>
-  <text x="140" y="538" text-anchor="middle" font-size="10" fill="#4a41b0">180 models daily</text>
-  <text x="140" y="552" text-anchor="middle" font-size="10" fill="#4a41b0">marketplace × page</text>
+  <!-- ── LAYER 4 + 5 ── -->
+  <rect x="30" y="448" width="392" height="100" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="46" y="466" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">LAYER 4 — TRAINING (DAILY)</text>
 
-  <rect x="250" y="496" width="160" height="70" rx="6" fill="#f9fafb" stroke="#854F0B" stroke-width="1"/>
-  <text x="330" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#7a4800">Objective</text>
-  <text x="330" y="538" text-anchor="middle" font-size="10" fill="#7a4800">CTR × LTV</text>
-  <text x="330" y="552" text-anchor="middle" font-size="10" fill="#7a4800">Step Functions</text>
+  <rect x="48" y="474" width="162" height="62" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="129" y="496" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">SageMaker Jobs</text>
+  <text x="129" y="513" text-anchor="middle" font-size="10" fill="#6d28d9">180 models daily</text>
+  <text x="129" y="528" text-anchor="middle" font-size="10" fill="#6d28d9">marketplace × page</text>
 
-  <!-- ── LAYER 5: INFERENCE ── -->
-  <rect x="460" y="470" width="410" height="110" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="476" y="488" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">LAYER 5 — REAL-TIME INFERENCE</text>
+  <rect x="226" y="474" width="180" height="62" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
+  <text x="316" y="496" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Objective</text>
+  <text x="316" y="513" text-anchor="middle" font-size="10" fill="#78350f">CTR × LTV</text>
+  <text x="316" y="528" text-anchor="middle" font-size="10" fill="#78350f">Step Functions</text>
 
-  <rect x="480" y="496" width="170" height="70" rx="6" fill="#f9fafb" stroke="#0F6E56" stroke-width="1"/>
-  <text x="565" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#0a6a4a">Feature Lookup</text>
-  <text x="565" y="538" text-anchor="middle" font-size="10" fill="#0a6a4a">Online store + cache</text>
-  <text x="565" y="552" text-anchor="middle" font-size="10" fill="#0a6a4a">~8ms</text>
+  <rect x="448" y="448" width="422" height="100" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="464" y="466" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">LAYER 5 — REAL-TIME INFERENCE</text>
 
-  <rect x="670" y="496" width="180" height="70" rx="6" fill="#f9fafb" stroke="#534AB7" stroke-width="1"/>
-  <text x="760" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#4a41b0">SageMaker Endpoint</text>
-  <text x="760" y="538" text-anchor="middle" font-size="10" fill="#4a41b0">1 of 180 selected</text>
-  <text x="760" y="552" text-anchor="middle" font-size="10" fill="#4a41b0">~15ms</text>
+  <rect x="466" y="474" width="168" height="62" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
+  <text x="550" y="496" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Feature Lookup</text>
+  <text x="550" y="513" text-anchor="middle" font-size="10" fill="#78350f">Online store + cache</text>
+  <text x="550" y="528" text-anchor="middle" font-size="10" fill="#d97706">~8ms</text>
+
+  <rect x="652" y="474" width="200" height="62" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="752" y="496" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">SageMaker Endpoint</text>
+  <text x="752" y="513" text-anchor="middle" font-size="10" fill="#6d28d9">1 of 180 selected</text>
+  <text x="752" y="528" text-anchor="middle" font-size="10" fill="#7c3aed">~15ms</text>
 
   <!-- promote arrow -->
-  <line x1="430" y1="531" x2="460" y2="531" stroke="#4a40cc" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-accent)"/>
-  <text x="445" y="524" text-anchor="middle" font-size="9" fill="#4a40cc">promote</text>
+  <line x1="422" y1="505" x2="444" y2="505" stroke="#7c3aed" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arr-accent)"/>
+  <text x="433" y="498" text-anchor="middle" font-size="8" fill="#7c3aed">promote</text>
 
   <!-- merge lines to serving layer -->
-  <line x1="240" y1="580" x2="240" y2="620" stroke="#9ca3af" stroke-width="1"/>
-  <line x1="565" y1="580" x2="565" y2="614" stroke="#9ca3af" stroke-width="1"/>
-  <line x1="760" y1="580" x2="760" y2="614" stroke="#9ca3af" stroke-width="1"/>
-  <line x1="565" y1="614" x2="760" y2="614" stroke="#9ca3af" stroke-width="1"/>
-  <line x1="663" y1="614" x2="663" y2="620" stroke="#9ca3af" stroke-width="1"/>
-  <line x1="240" y1="620" x2="663" y2="620" stroke="#9ca3af" stroke-width="1"/>
-  <line x1="450" y1="620" x2="450" y2="640" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="235" y1="548" x2="235" y2="580" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="550" y1="548" x2="550" y2="572" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="752" y1="548" x2="752" y2="572" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="550" y1="572" x2="752" y2="572" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="651" y1="572" x2="651" y2="580" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="235" y1="580" x2="651" y2="580" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="450" y1="580" x2="450" y2="594" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
 
-  <!-- ── LAYER 6: SERVING ── -->
-  <rect x="30" y="640" width="840" height="70" rx="8" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
-  <text x="450" y="668" text-anchor="middle" font-size="13" font-weight="600" fill="#882010">LAYER 6 — Ranking Serving Layer</text>
-  <text x="450" y="686" text-anchor="middle" font-size="10" fill="#882010">Routes to correct model · enforces p99 &lt;50ms SLA · fallback to last known ranking on timeout</text>
+  <!-- ── LAYER 6 ── -->
+  <rect x="30" y="596" width="840" height="62" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="450" y="622" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">LAYER 6 — Ranking Serving Layer</text>
+  <text x="450" y="642" text-anchor="middle" font-size="10" fill="#dc2626">Routes to correct model · enforces p99 &lt;50ms SLA · fallback to last known ranking on timeout</text>
 
-  <line x1="450" y1="710" x2="450" y2="740" stroke="#9ca3af" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="450" y1="658" x2="450" y2="676" stroke="#9ca3af" stroke-width="1" marker-end="url(#arr)"/>
 
-  <!-- ── LAYER 7: SURFACES ── -->
-  <rect x="30" y="740" width="840" height="70" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="46" y="758" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">LAYER 7 — PAGE SURFACES</text>
+  <!-- ── LAYER 7 ── -->
+  <rect x="30" y="678" width="840" height="62" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="46" y="696" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">LAYER 7 — PAGE SURFACES</text>
 
-  <rect x="50" y="764" width="175" height="36" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="138" y="786" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Product Page (PDP)</text>
+  <rect x="48" y="702" width="178" height="30" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="137" y="721" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Product Page (PDP)</text>
 
-  <rect x="245" y="764" width="175" height="36" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="333" y="786" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Add to Cart</text>
+  <rect x="240" y="702" width="178" height="30" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="329" y="721" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Add to Cart</text>
 
-  <rect x="440" y="764" width="175" height="36" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="528" y="786" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Checkout</text>
+  <rect x="432" y="702" width="178" height="30" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="521" y="721" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Checkout</text>
 
-  <rect x="635" y="764" width="205" height="36" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="738" y="786" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Thank You Page</text>
+  <rect x="624" y="702" width="214" height="30" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="731" y="721" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Thank You Page</text>
 
   <!-- ── MONITORING ── -->
-  <line x1="450" y1="810" x2="450" y2="840" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+  <line x1="450" y1="740" x2="450" y2="762" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 2" marker-end="url(#arr)"/>
 
-  <rect x="30" y="840" width="840" height="110" rx="8" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="46" y="858" font-size="10" fill="#6b7280" font-weight="500" letter-spacing="1">MONITORING — CLOUDWATCH + SAGEMAKER MODEL MONITOR</text>
+  <rect x="30" y="764" width="840" height="102" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="46" y="782" font-size="10" font-weight="600" letter-spacing="1" fill="#6b7280">MONITORING — CLOUDWATCH + SAGEMAKER MODEL MONITOR</text>
 
-  <rect x="50" y="866" width="240" height="68" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
-  <text x="170" y="888" text-anchor="middle" font-size="12" font-weight="600" fill="#882010">AUPRC</text>
-  <text x="170" y="906" text-anchor="middle" font-size="10" fill="#882010">Ranking quality</text>
-  <text x="170" y="920" text-anchor="middle" font-size="10" fill="#882010">Handles class imbalance</text>
+  <rect x="48" y="790" width="238" height="62" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="167" y="812" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">AUPRC</text>
+  <text x="167" y="830" text-anchor="middle" font-size="10" fill="#dc2626">Ranking quality</text>
+  <text x="167" y="846" text-anchor="middle" font-size="10" fill="#b91c1c">Handles class imbalance</text>
 
-  <rect x="330" y="866" width="240" height="68" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
-  <text x="450" y="888" text-anchor="middle" font-size="12" font-weight="600" fill="#882010">AURC</text>
-  <text x="450" y="906" text-anchor="middle" font-size="10" fill="#882010">Risk-coverage curve</text>
-  <text x="450" y="920" text-anchor="middle" font-size="10" fill="#882010">Selective prediction quality</text>
+  <rect x="331" y="790" width="238" height="62" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="450" y="812" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">AURC</text>
+  <text x="450" y="830" text-anchor="middle" font-size="10" fill="#dc2626">Risk-coverage curve</text>
+  <text x="450" y="846" text-anchor="middle" font-size="10" fill="#b91c1c">Selective prediction quality</text>
 
-  <rect x="610" y="866" width="240" height="68" rx="6" fill="#f9fafb" stroke="#993C1D" stroke-width="1"/>
-  <text x="730" y="888" text-anchor="middle" font-size="12" font-weight="600" fill="#882010">PBR</text>
-  <text x="730" y="906" text-anchor="middle" font-size="10" fill="#882010">Prediction Bias Ratio</text>
-  <text x="730" y="920" text-anchor="middle" font-size="10" fill="#882010">Calibration drift detection</text>
+  <rect x="614" y="790" width="238" height="62" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="733" y="812" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">PBR</text>
+  <text x="733" y="830" text-anchor="middle" font-size="10" fill="#dc2626">Prediction Bias Ratio</text>
+  <text x="733" y="846" text-anchor="middle" font-size="10" fill="#b91c1c">Calibration drift detection</text>
 
-  <!-- feedback loop -->
-  <path d="M 870 950 L 885 950 L 885 141 L 860 141" fill="none" stroke="#4a40cc" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow-accent)"/>
-  <text x="890" y="560" font-size="9" fill="#4a40cc" transform="rotate(90 890 560)">metric breach → retraining trigger</text>
+  <!-- Feedback loop -->
+  <path d="M 872 866 L 886 866 L 886 129 L 870 129" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-accent)"/>
+  <text x="895" y="520" text-anchor="middle" font-size="9" fill="#7c3aed" transform="rotate(90 895 520)">metric breach → retraining trigger</text>
 </svg>
