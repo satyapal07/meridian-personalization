@@ -213,45 +213,20 @@ This is what AI product management at scale actually looks like. The model is a 
 
 ---
 
-## The demo
-
-This repo includes a working mock commerce platform — Meridian Commerce — with the personalization engine running visibly on top of it.
-
-You can browse the storefront, switch between customer personas, and watch in real time as the personalization system changes which products and offers are surfaced. An inspector panel shows the model's reasoning: which features drove the ranking, what the scores were, why this offer won over that one.
-
-**[→ Live demo](https://your-username.github.io/meridian-personalization)**
-
-**[→ Running locally](#running-locally)**
-
----
-
-## Running locally
-
-```bash
-git clone https://github.com/your-username/meridian-personalization
-cd meridian-personalization
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173`
-
----
-
 ## Repo structure
 
 ```
 meridian-personalization/
 ├── README.md                    ← you are here
-├── diagrams/                    ← architecture SVGs
+├── diagrams/                    ← architecture diagrams
+│   ├── personalization-layers.png   ← system overview
 │   ├── 01-full-architecture.svg
 │   ├── 02-feature-store.svg
 │   ├── 03-objective-function.svg
 │   ├── 04-180-models.svg
 │   └── 05-serving-layer.svg
-├── docs/
-│   └── ltv-methodology.md       ← how LTV is calculated across offer types
-└── src/                         ← demo application
+└── docs/
+    └── ltv-methodology.md       ← how LTV is calculated across offer types
 ```
 
 ---
