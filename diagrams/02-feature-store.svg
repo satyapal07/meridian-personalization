@@ -99,7 +99,7 @@
   <text x="230" y="570" text-anchor="middle" font-size="10" fill="#85B7EB">Offline store → training dataset → model weights</text>
 
   <rect x="470" y="506" width="400" height="84" rx="6" fill="#1a1a2e" stroke="#854F0B" stroke-width="1"/>
-  <text x="670" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#FAC775">HAF Inference Endpoint</text>
+  <text x="670" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#FAC775">Ranking Inference Endpoint</text>
   <text x="670" y="550" text-anchor="middle" font-size="10" fill="#EF9F27">Online store → feature vector → model score</text>
   <text x="670" y="570" text-anchor="middle" font-size="10" fill="#EF9F27">Per request, under 50ms total path</text>
 </svg>

@@ -16,7 +16,7 @@ I spent four years building payment offer personalization systems at scale. This
 
 ## The deceptively simple question
 
-When you land on an Amazon product page, a system decides in real time which payment offer to show you — a co-branded credit card, a buy-now-pay-later option, a gift card, a points redemption offer, or nothing at all.
+When you land on a product page, a system decides in real time which payment offer to show you — a co-branded credit card, a buy-now-pay-later option, a gift card, a points redemption offer, or nothing at all.
 
 One slot. One offer. Hundreds of millions of decisions per day.
 
@@ -93,7 +93,7 @@ A single transformation layer — same code, run in batch by Spark nightly and i
 
 | Group | Examples | Latency requirement |
 |-------|----------|-------------------|
-| Customer | LTV tier, Prime status, CTR per offer type, days since last impression, payment method on file | Online, <10ms |
+| Customer | LTV tier, membership status, CTR per offer type, days since last impression, payment method on file | Online, <10ms |
 | Session | Page type, cart value, session length, device type | Online, <10ms |
 | Offer | Offer type, LTV value, eligibility flag, days since shown to this customer | Online, <10ms |
 | Context | Marketplace, time of day, day of week, funnel stage | Inline, <1ms |
@@ -117,7 +117,7 @@ The result: the ranking system was efficiently delivering clicks to offers that 
 
 Lifetime value (LTV) measures the total revenue a customer generates as a result of accepting an offer. For a co-branded credit card, LTV has three components:
 
-1. **Bank acquisition bounty** — a one-time fee paid per approved signup
+1. **Card acquisition fee** — a one-time fee paid per approved signup
 2. **Spend lift** — cardholders with 5% cashback spend significantly more on the platform
 3. **Membership retention** — customers upgrade or maintain premium membership to maximize the cashback benefit
 

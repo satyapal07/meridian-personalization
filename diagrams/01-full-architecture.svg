@@ -109,7 +109,7 @@
   <line x1="430" y1="531" x2="460" y2="531" stroke="#6c63ff" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-accent)"/>
   <text x="445" y="524" text-anchor="middle" font-size="9" fill="#6c63ff">promote</text>
 
-  <!-- merge lines to HAF -->
+  <!-- merge lines to serving layer -->
   <line x1="240" y1="580" x2="240" y2="620" stroke="#555" stroke-width="1"/>
   <line x1="565" y1="580" x2="565" y2="614" stroke="#555" stroke-width="1"/>
   <line x1="760" y1="580" x2="760" y2="614" stroke="#555" stroke-width="1"/>
@@ -118,9 +118,9 @@
   <line x1="240" y1="620" x2="663" y2="620" stroke="#555" stroke-width="1"/>
   <line x1="450" y1="620" x2="450" y2="640" stroke="#555" stroke-width="1" marker-end="url(#arrow)"/>
 
-  <!-- ── LAYER 6: HAF ── -->
+  <!-- ── LAYER 6: SERVING ── -->
   <rect x="30" y="640" width="840" height="70" rx="8" fill="#1a1a2e" stroke="#993C1D" stroke-width="1"/>
-  <text x="450" y="668" text-anchor="middle" font-size="13" font-weight="600" fill="#F5C4B3">LAYER 6 — HAF Serving Layer</text>
+  <text x="450" y="668" text-anchor="middle" font-size="13" font-weight="600" fill="#F5C4B3">LAYER 6 — Ranking Serving Layer</text>
   <text x="450" y="686" text-anchor="middle" font-size="10" fill="#F0997B">Routes to correct model · enforces p99 &lt;50ms SLA · fallback to last known ranking on timeout</text>
 
   <line x1="450" y1="710" x2="450" y2="740" stroke="#555" stroke-width="1" marker-end="url(#arrow)"/>

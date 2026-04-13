@@ -16,7 +16,7 @@
   <line x1="450" y1="70" x2="450" y2="480" stroke="#2a2a3a" stroke-width="1" stroke-dasharray="4 3"/>
 
   <!-- Offer data: id, name, ctr, ltv, ctr_color, ltv_color -->
-  <!-- CTR ranking: gift(0.82), points(0.78), amex(0.61), bnpl(0.55), visa(0.38), referral(0.31) -->
+  <!-- CTR ranking: gift(0.82), points(0.78), card(0.61), bnpl(0.55), visa(0.38), referral(0.31) -->
   <!-- LTV ranking: visa(4.0), referral(3.5), bnpl(1.8), amex(1.2), gift(1.0), points(0.8) -->
 
   <!-- CTR RANKED LIST -->
@@ -36,10 +36,10 @@
   <rect x="300" y="190" width="100" height="8" rx="3" fill="#1f1f2e"/>
   <rect x="300" y="190" width="78" height="8" rx="3" fill="#444"/>
 
-  <!-- Rank 3: Amex -->
+  <!-- Rank 3: Card -->
   <rect x="30" y="236" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
   <text x="54" y="256" font-size="10" fill="#666">#3</text>
-  <text x="80" y="256" font-size="12" font-weight="500" fill="#9090a8">Pay with Amex</text>
+  <text x="80" y="256" font-size="12" font-weight="500" fill="#9090a8">Pay with Card</text>
   <text x="80" y="274" font-size="9" fill="#666">CTR 0.61 · LTV 1.2× · score 0.610</text>
   <rect x="300" y="248" width="100" height="8" rx="3" fill="#1f1f2e"/>
   <rect x="300" y="248" width="61" height="8" rx="3" fill="#444"/>
@@ -47,7 +47,7 @@
   <!-- Rank 4: BNPL -->
   <rect x="30" y="294" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
   <text x="54" y="314" font-size="10" fill="#666">#4</text>
-  <text x="80" y="314" font-size="12" font-weight="500" fill="#9090a8">Affirm BNPL</text>
+  <text x="80" y="314" font-size="12" font-weight="500" fill="#9090a8">Split Pay (BNPL)</text>
   <text x="80" y="332" font-size="9" fill="#666">CTR 0.55 · LTV 1.8× · score 0.550</text>
   <rect x="300" y="306" width="100" height="8" rx="3" fill="#1f1f2e"/>
   <rect x="300" y="306" width="55" height="8" rx="3" fill="#444"/>
@@ -88,15 +88,15 @@
   <!-- Rank 3: BNPL (0.55 × 1.8 = 0.99) -->
   <rect x="480" y="236" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#185FA5" stroke-width="1"/>
   <text x="504" y="256" font-size="10" fill="#85B7EB">#3</text>
-  <text x="530" y="256" font-size="12" font-weight="500" fill="#B5D4F4">Affirm BNPL</text>
+  <text x="530" y="256" font-size="12" font-weight="500" fill="#B5D4F4">Split Pay (BNPL)</text>
   <text x="530" y="274" font-size="9" fill="#85B7EB">CTR 0.55 · LTV 1.8× · score 0.990</text>
   <rect x="730" y="248" width="120" height="8" rx="3" fill="#1f1f2e"/>
   <rect x="730" y="248" width="78" height="8" rx="3" fill="#185FA5" opacity="0.8"/>
 
-  <!-- Rank 4: Amex (0.61 × 1.2 = 0.732) -->
+  <!-- Rank 4: Card (0.61 × 1.2 = 0.732) -->
   <rect x="480" y="294" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
   <text x="504" y="314" font-size="10" fill="#666">#4</text>
-  <text x="530" y="314" font-size="12" font-weight="500" fill="#9090a8">Pay with Amex</text>
+  <text x="530" y="314" font-size="12" font-weight="500" fill="#9090a8">Pay with Card</text>
   <text x="530" y="332" font-size="9" fill="#666">CTR 0.61 · LTV 1.2× · score 0.732</text>
   <rect x="730" y="306" width="120" height="8" rx="3" fill="#1f1f2e"/>
   <rect x="730" y="306" width="58" height="8" rx="3" fill="#444"/>

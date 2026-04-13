@@ -16,9 +16,9 @@ Each offer type generates revenue through a completely different mechanism:
 |-------|-----------------|--------------|-----------|
 | Gift card | One-time margin + breakage | Immediate | High |
 | Shop with points | Reduced churn, loyalty engagement | 12 months | Medium |
-| Pay with Amex | Interchange share | Per transaction | High |
-| Affirm BNPL | Merchant fee + repeat usage | 6 months | Medium |
-| Meridian Visa signup | Bank bounty + spend lift + membership | 24 months | Lower |
+| Pay with Card | Interchange share | Per transaction | High |
+| Split Pay (BNPL) | Merchant fee + repeat usage | 6 months | Medium |
+| Meridian Visa signup | Acquisition fee + spend lift + membership | 24 months | Lower |
 | Meridian Visa referral | Same as signup, peer-acquired | 24 months | Lower |
 
 Comparing these directly is like comparing apples to present-value-discounted-apple-futures. You need a framework.
@@ -33,7 +33,7 @@ Key decisions baked into this definition:
 
 **12 months** — long enough to capture meaningful downstream behavior for credit card products, short enough to limit forecast uncertainty. 24-month LTVs for credit card products would be higher but less reliable.
 
-**Incremental** — the counterfactual matters. If a customer was going to shop regardless, the gift card's LTV is only the margin on the card itself, not their total spend. For the Meridian Visa, incrementality is higher because the 5% cashback demonstrably drives spend that wouldn't otherwise have happened.
+**Incremental** — the counterfactual matters. If a customer was going to shop regardless, the gift card's LTV is only the margin on the card itself, not their total spend. For the co-branded card, incrementality is higher because the cashback benefit demonstrably drives spend that wouldn't otherwise have happened.
 
 **Present value** — a dollar of revenue in 12 months is worth less than a dollar today. We used a standard discount rate agreed with finance.
 
@@ -51,19 +51,19 @@ Why it's the baseline: immediate, certain, simple to calculate. Everything else 
 
 Points redemption is slightly below baseline because it represents redemption of a liability (outstanding points) rather than new revenue. The benefit is churn reduction — customers who engage with points stay on the platform longer. But the direct revenue impact is negative (we're paying out points), with the offset being retention.
 
-### Pay with Amex: LTV = 1.2×
+### Pay with Card: LTV = 1.2×
 
-Interchange share per transaction. Predictable, per-use revenue. Higher than gift card because the relationship is ongoing — a customer who saves their Amex card will use it across many future purchases.
+Interchange share per transaction. Predictable, per-use revenue. Higher than gift card because the relationship is ongoing — a customer who saves their card will use it across many future purchases.
 
-### Affirm BNPL: LTV = 1.8×
+### Split Pay (BNPL): LTV = 1.8×
 
-Merchant fee per transaction (Affirm pays us a referral fee) + cart size lift (customers spend more when they can split payments) + repeat BNPL usage over the following 6 months. The cart size lift is the largest component.
+Merchant fee per transaction (the BNPL provider pays a referral fee) + cart size lift (customers spend more when they can split payments) + repeat usage over the following 6 months. The cart size lift is the largest component.
 
 ### Meridian Visa signup: LTV = 4.0×
 
 Three revenue streams:
 
-1. **Bank acquisition bounty** — a one-time fee paid by the card-issuing bank for each approved application. This is the largest single component.
+1. **Card acquisition fee** — a one-time fee paid by the card-issuing bank for each approved application. This is the largest single component.
 
 2. **Spend lift** — cardholders with 5% cashback on Meridian purchases spend measurably more than they did before the card, and more than comparable non-cardholders. This is calculated from cohort analysis: matched pairs of customers who got the card vs. didn't, controlling for pre-card spend level.
 
