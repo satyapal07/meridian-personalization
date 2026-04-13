@@ -1,57 +1,57 @@
 <svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, 'Cascadia Code', monospace">
-  <rect width="900" height="620" fill="#0d0d14" rx="12"/>
+  <rect width="900" height="620" fill="#ffffff" rx="12"/>
 
-  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#f0f0f5">Feature Store Architecture</text>
-  <text x="450" y="56" text-anchor="middle" font-size="11" fill="#55556a">Same transformation logic for training and serving — prevents training-serving skew</text>
+  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a2e">Feature Store Architecture</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="#666677">Same transformation logic for training and serving — prevents training-serving skew</text>
 
   <!-- Feature groups -->
-  <text x="46" y="82" font-size="10" fill="#55556a" font-weight="500" letter-spacing="1">FEATURE GROUPS</text>
+  <text x="46" y="82" font-size="10" fill="#666677" font-weight="500" letter-spacing="1">FEATURE GROUPS</text>
 
-  <rect x="30" y="90" width="156" height="100" rx="6" fill="#1a1a2e" stroke="#0F6E56" stroke-width="1"/>
-  <text x="108" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#9FE1CB">Customer</text>
-  <text x="108" y="130" text-anchor="middle" font-size="9" fill="#5DCAA5">LTV tier, Prime status</text>
-  <text x="108" y="146" text-anchor="middle" font-size="9" fill="#5DCAA5">CTR per offer type</text>
-  <text x="108" y="162" text-anchor="middle" font-size="9" fill="#5DCAA5">Days since impression</text>
-  <text x="108" y="178" text-anchor="middle" font-size="9" fill="#5DCAA5">Payment method on file</text>
+  <rect x="30" y="90" width="156" height="100" rx="6" fill="#f0f0f8" stroke="#0F6E56" stroke-width="1"/>
+  <text x="108" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#0a6a4a">Customer</text>
+  <text x="108" y="130" text-anchor="middle" font-size="9" fill="#0a6a4a">LTV tier, Prime status</text>
+  <text x="108" y="146" text-anchor="middle" font-size="9" fill="#0a6a4a">CTR per offer type</text>
+  <text x="108" y="162" text-anchor="middle" font-size="9" fill="#0a6a4a">Days since impression</text>
+  <text x="108" y="178" text-anchor="middle" font-size="9" fill="#0a6a4a">Payment method on file</text>
 
-  <rect x="202" y="90" width="156" height="100" rx="6" fill="#1a1a2e" stroke="#0F6E56" stroke-width="1"/>
-  <text x="280" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#9FE1CB">Session</text>
-  <text x="280" y="130" text-anchor="middle" font-size="9" fill="#5DCAA5">Page type</text>
-  <text x="280" y="146" text-anchor="middle" font-size="9" fill="#5DCAA5">Cart value, items</text>
-  <text x="280" y="162" text-anchor="middle" font-size="9" fill="#5DCAA5">Session length</text>
-  <text x="280" y="178" text-anchor="middle" font-size="9" fill="#5DCAA5">Device type</text>
+  <rect x="202" y="90" width="156" height="100" rx="6" fill="#f0f0f8" stroke="#0F6E56" stroke-width="1"/>
+  <text x="280" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#0a6a4a">Session</text>
+  <text x="280" y="130" text-anchor="middle" font-size="9" fill="#0a6a4a">Page type</text>
+  <text x="280" y="146" text-anchor="middle" font-size="9" fill="#0a6a4a">Cart value, items</text>
+  <text x="280" y="162" text-anchor="middle" font-size="9" fill="#0a6a4a">Session length</text>
+  <text x="280" y="178" text-anchor="middle" font-size="9" fill="#0a6a4a">Device type</text>
 
-  <rect x="374" y="90" width="156" height="100" rx="6" fill="#1a1a2e" stroke="#534AB7" stroke-width="1"/>
-  <text x="452" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#AFA9EC">Offer</text>
-  <text x="452" y="130" text-anchor="middle" font-size="9" fill="#7F77DD">Offer type, LTV value</text>
-  <text x="452" y="146" text-anchor="middle" font-size="9" fill="#7F77DD">Eligibility flag</text>
-  <text x="452" y="162" text-anchor="middle" font-size="9" fill="#7F77DD">Days since shown</text>
-  <text x="452" y="178" text-anchor="middle" font-size="9" fill="#7F77DD">Marketer priority</text>
+  <rect x="374" y="90" width="156" height="100" rx="6" fill="#f0f0f8" stroke="#534AB7" stroke-width="1"/>
+  <text x="452" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#4a41b0">Offer</text>
+  <text x="452" y="130" text-anchor="middle" font-size="9" fill="#4a41b0">Offer type, LTV value</text>
+  <text x="452" y="146" text-anchor="middle" font-size="9" fill="#4a41b0">Eligibility flag</text>
+  <text x="452" y="162" text-anchor="middle" font-size="9" fill="#4a41b0">Days since shown</text>
+  <text x="452" y="178" text-anchor="middle" font-size="9" fill="#4a41b0">Marketer priority</text>
 
-  <rect x="546" y="90" width="156" height="100" rx="6" fill="#1a1a2e" stroke="#534AB7" stroke-width="1"/>
-  <text x="624" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#AFA9EC">Context</text>
-  <text x="624" y="130" text-anchor="middle" font-size="9" fill="#7F77DD">Marketplace</text>
-  <text x="624" y="146" text-anchor="middle" font-size="9" fill="#7F77DD">Time of day</text>
-  <text x="624" y="162" text-anchor="middle" font-size="9" fill="#7F77DD">Day of week</text>
-  <text x="624" y="178" text-anchor="middle" font-size="9" fill="#7F77DD">Funnel stage</text>
+  <rect x="546" y="90" width="156" height="100" rx="6" fill="#f0f0f8" stroke="#534AB7" stroke-width="1"/>
+  <text x="624" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#4a41b0">Context</text>
+  <text x="624" y="130" text-anchor="middle" font-size="9" fill="#4a41b0">Marketplace</text>
+  <text x="624" y="146" text-anchor="middle" font-size="9" fill="#4a41b0">Time of day</text>
+  <text x="624" y="162" text-anchor="middle" font-size="9" fill="#4a41b0">Day of week</text>
+  <text x="624" y="178" text-anchor="middle" font-size="9" fill="#4a41b0">Funnel stage</text>
 
-  <rect x="718" y="90" width="156" height="100" rx="6" fill="#1a1a2e" stroke="#854F0B" stroke-width="1"/>
-  <text x="796" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#FAC775">Content</text>
-  <text x="796" y="130" text-anchor="middle" font-size="9" fill="#EF9F27">Creative format</text>
-  <text x="796" y="146" text-anchor="middle" font-size="9" fill="#EF9F27">Copy type</text>
-  <text x="796" y="162" text-anchor="middle" font-size="9" fill="#EF9F27">Real estate size</text>
-  <text x="796" y="178" text-anchor="middle" font-size="9" fill="#EF9F27">Campaign recency</text>
+  <rect x="718" y="90" width="156" height="100" rx="6" fill="#f0f0f8" stroke="#854F0B" stroke-width="1"/>
+  <text x="796" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="#7a4800">Content</text>
+  <text x="796" y="130" text-anchor="middle" font-size="9" fill="#7a4800">Creative format</text>
+  <text x="796" y="146" text-anchor="middle" font-size="9" fill="#7a4800">Copy type</text>
+  <text x="796" y="162" text-anchor="middle" font-size="9" fill="#7a4800">Real estate size</text>
+  <text x="796" y="178" text-anchor="middle" font-size="9" fill="#7a4800">Campaign recency</text>
 
   <!-- arrows to transform -->
-  <line x1="108" y1="190" x2="300" y2="240" stroke="#555" stroke-width="1" marker-end="url(#a)"/>
-  <line x1="280" y1="190" x2="360" y2="240" stroke="#555" stroke-width="1" marker-end="url(#a)"/>
-  <line x1="452" y1="190" x2="450" y2="240" stroke="#555" stroke-width="1" marker-end="url(#a)"/>
-  <line x1="624" y1="190" x2="540" y2="240" stroke="#555" stroke-width="1" marker-end="url(#a)"/>
-  <line x1="796" y1="190" x2="600" y2="240" stroke="#555" stroke-width="1" marker-end="url(#a)"/>
+  <line x1="108" y1="190" x2="300" y2="240" stroke="#999999" stroke-width="1" marker-end="url(#a)"/>
+  <line x1="280" y1="190" x2="360" y2="240" stroke="#999999" stroke-width="1" marker-end="url(#a)"/>
+  <line x1="452" y1="190" x2="450" y2="240" stroke="#999999" stroke-width="1" marker-end="url(#a)"/>
+  <line x1="624" y1="190" x2="540" y2="240" stroke="#999999" stroke-width="1" marker-end="url(#a)"/>
+  <line x1="796" y1="190" x2="600" y2="240" stroke="#999999" stroke-width="1" marker-end="url(#a)"/>
 
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#999999" stroke-width="1.5" stroke-linecap="round"/>
     </marker>
     <marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
       <path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round"/>
@@ -62,9 +62,9 @@
   </defs>
 
   <!-- Transform layer -->
-  <rect x="30" y="248" width="840" height="56" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
-  <text x="450" y="272" text-anchor="middle" font-size="12" font-weight="600" fill="#9090a8">Feature Transformation Layer — single definition, identical logic for batch and streaming</text>
-  <text x="450" y="292" text-anchor="middle" font-size="10" fill="#666">Spark (nightly batch) + Kinesis Data Analytics (streaming) run the same transformation code</text>
+  <rect x="30" y="248" width="840" height="56" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="450" y="272" text-anchor="middle" font-size="12" font-weight="600" fill="#555566">Feature Transformation Layer — single definition, identical logic for batch and streaming</text>
+  <text x="450" y="292" text-anchor="middle" font-size="10" fill="#888899">Spark (nightly batch) + Kinesis Data Analytics (streaming) run the same transformation code</text>
 
   <!-- fork arrows -->
   <line x1="250" y1="304" x2="200" y2="346" stroke="#185FA5" stroke-width="1" marker-end="url(#b)"/>
@@ -73,33 +73,33 @@
   <!-- Offline store -->
   <rect x="30" y="346" width="400" height="120" rx="8" fill="none" stroke="#185FA5" stroke-width="1" stroke-dasharray="4 3"/>
   <text x="46" y="364" font-size="10" fill="#185FA5" font-weight="500" letter-spacing="1">OFFLINE STORE (S3 / PARQUET)</text>
-  <rect x="50" y="372" width="360" height="40" rx="5" fill="#1a1a2e" stroke="#185FA5" stroke-width="0.5"/>
-  <text x="230" y="390" text-anchor="middle" font-size="11" font-weight="600" fill="#B5D4F4">Historical snapshots</text>
-  <text x="230" y="406" text-anchor="middle" font-size="9" fill="#85B7EB">Point-in-time correct joins — no future data leakage</text>
-  <rect x="50" y="422" width="360" height="32" rx="5" fill="#1a1a2e" stroke="#185FA5" stroke-width="0.5"/>
-  <text x="230" y="442" text-anchor="middle" font-size="11" font-weight="500" fill="#B5D4F4">Feature versioning — models pinned to feature versions</text>
+  <rect x="50" y="372" width="360" height="40" rx="5" fill="#f0f0f8" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="230" y="390" text-anchor="middle" font-size="11" font-weight="600" fill="#1a5a9a">Historical snapshots</text>
+  <text x="230" y="406" text-anchor="middle" font-size="9" fill="#1a5a9a">Point-in-time correct joins — no future data leakage</text>
+  <rect x="50" y="422" width="360" height="32" rx="5" fill="#f0f0f8" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="230" y="442" text-anchor="middle" font-size="11" font-weight="500" fill="#1a5a9a">Feature versioning — models pinned to feature versions</text>
 
   <!-- Online store -->
   <rect x="470" y="346" width="400" height="120" rx="8" fill="none" stroke="#854F0B" stroke-width="1" stroke-dasharray="4 3"/>
   <text x="486" y="364" font-size="10" fill="#854F0B" font-weight="500" letter-spacing="1">ONLINE STORE (DYNAMODB / REDIS)</text>
-  <rect x="490" y="372" width="360" height="40" rx="5" fill="#1a1a2e" stroke="#854F0B" stroke-width="0.5"/>
-  <text x="670" y="390" text-anchor="middle" font-size="11" font-weight="600" fill="#FAC775">Current values only</text>
-  <text x="670" y="406" text-anchor="middle" font-size="9" fill="#EF9F27">Sub-10ms key-value lookup — composite key: customer × surface × marketplace</text>
-  <rect x="490" y="422" width="360" height="32" rx="5" fill="#1a1a2e" stroke="#854F0B" stroke-width="0.5"/>
-  <text x="670" y="442" text-anchor="middle" font-size="11" font-weight="500" fill="#FAC775">Seconds-fresh via Kinesis streaming pipeline</text>
+  <rect x="490" y="372" width="360" height="40" rx="5" fill="#f0f0f8" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="670" y="390" text-anchor="middle" font-size="11" font-weight="600" fill="#7a4800">Current values only</text>
+  <text x="670" y="406" text-anchor="middle" font-size="9" fill="#7a4800">Sub-10ms key-value lookup — composite key: customer × surface × marketplace</text>
+  <rect x="490" y="422" width="360" height="32" rx="5" fill="#f0f0f8" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="670" y="442" text-anchor="middle" font-size="11" font-weight="500" fill="#7a4800">Seconds-fresh via Kinesis streaming pipeline</text>
 
   <!-- arrows to consumers -->
   <line x1="230" y1="466" x2="230" y2="506" stroke="#185FA5" stroke-width="1" marker-end="url(#b)"/>
   <line x1="670" y1="466" x2="670" y2="506" stroke="#854F0B" stroke-width="1" marker-end="url(#c)"/>
 
   <!-- Consumers -->
-  <rect x="30" y="506" width="400" height="84" rx="6" fill="#1a1a2e" stroke="#185FA5" stroke-width="1"/>
-  <text x="230" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#B5D4F4">SageMaker Training Jobs</text>
-  <text x="230" y="550" text-anchor="middle" font-size="10" fill="#85B7EB">180 models trained daily</text>
-  <text x="230" y="570" text-anchor="middle" font-size="10" fill="#85B7EB">Offline store → training dataset → model weights</text>
+  <rect x="30" y="506" width="400" height="84" rx="6" fill="#f0f0f8" stroke="#185FA5" stroke-width="1"/>
+  <text x="230" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#1a5a9a">SageMaker Training Jobs</text>
+  <text x="230" y="550" text-anchor="middle" font-size="10" fill="#1a5a9a">180 models trained daily</text>
+  <text x="230" y="570" text-anchor="middle" font-size="10" fill="#1a5a9a">Offline store → training dataset → model weights</text>
 
-  <rect x="470" y="506" width="400" height="84" rx="6" fill="#1a1a2e" stroke="#854F0B" stroke-width="1"/>
-  <text x="670" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#FAC775">Ranking Inference Endpoint</text>
-  <text x="670" y="550" text-anchor="middle" font-size="10" fill="#EF9F27">Online store → feature vector → model score</text>
-  <text x="670" y="570" text-anchor="middle" font-size="10" fill="#EF9F27">Per request, under 50ms total path</text>
+  <rect x="470" y="506" width="400" height="84" rx="6" fill="#f0f0f8" stroke="#854F0B" stroke-width="1"/>
+  <text x="670" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#7a4800">Ranking Inference Endpoint</text>
+  <text x="670" y="550" text-anchor="middle" font-size="10" fill="#7a4800">Online store → feature vector → model score</text>
+  <text x="670" y="570" text-anchor="middle" font-size="10" fill="#7a4800">Per request, under 50ms total path</text>
 </svg>

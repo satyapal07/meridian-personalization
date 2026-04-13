@@ -1,19 +1,19 @@
 <svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, 'Cascadia Code', monospace">
-  <rect width="900" height="500" fill="#0d0d14" rx="12"/>
+  <rect width="900" height="500" fill="#ffffff" rx="12"/>
 
-  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#f0f0f5">Objective Function: CTR vs CTR × LTV</text>
-  <text x="450" y="56" text-anchor="middle" font-size="11" fill="#55556a">Same 6 offers — completely different rankings — significant revenue difference</text>
+  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a2e">Objective Function: CTR vs CTR × LTV</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="#666677">Same 6 offers — completely different rankings — significant revenue difference</text>
 
   <!-- CTR only side -->
   <text x="210" y="86" text-anchor="middle" font-size="13" font-weight="600" fill="#ef4444">CTR Only  ← original objective</text>
-  <text x="210" y="104" text-anchor="middle" font-size="10" fill="#666">score = CTR</text>
+  <text x="210" y="104" text-anchor="middle" font-size="10" fill="#888899">score = CTR</text>
 
   <!-- CTR x LTV side -->
-  <text x="690" y="86" text-anchor="middle" font-size="13" font-weight="600" fill="#22c55e">CTR × LTV  ← new objective</text>
-  <text x="690" y="104" text-anchor="middle" font-size="10" fill="#666">score = CTR × LTV multiplier</text>
+  <text x="690" y="86" text-anchor="middle" font-size="13" font-weight="600" fill="#16a34a">CTR × LTV  ← new objective</text>
+  <text x="690" y="104" text-anchor="middle" font-size="10" fill="#888899">score = CTR × LTV multiplier</text>
 
   <!-- Divider -->
-  <line x1="450" y1="70" x2="450" y2="480" stroke="#2a2a3a" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="450" y1="70" x2="450" y2="480" stroke="#d0d0e0" stroke-width="1" stroke-dasharray="4 3"/>
 
   <!-- Offer data: id, name, ctr, ltv, ctr_color, ltv_color -->
   <!-- CTR ranking: gift(0.82), points(0.78), card(0.61), bnpl(0.55), visa(0.38), referral(0.31) -->
@@ -21,105 +21,105 @@
 
   <!-- CTR RANKED LIST -->
   <!-- Rank 1: Gift Card -->
-  <rect x="30" y="120" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#854F0B" stroke-width="1.5"/>
-  <text x="54" y="140" font-size="10" fill="#EF9F27">#1</text>
-  <text x="80" y="140" font-size="12" font-weight="600" fill="#FAC775">Gift Card</text>
-  <text x="80" y="158" font-size="9" fill="#EF9F27">CTR 0.82 · LTV 1.0× · score 0.820</text>
-  <rect x="300" y="132" width="100" height="8" rx="3" fill="#1f1f2e"/>
+  <rect x="30" y="120" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#854F0B" stroke-width="1.5"/>
+  <text x="54" y="140" font-size="10" fill="#7a4800">#1</text>
+  <text x="80" y="140" font-size="12" font-weight="600" fill="#7a4800">Gift Card</text>
+  <text x="80" y="158" font-size="9" fill="#7a4800">CTR 0.82 · LTV 1.0× · score 0.820</text>
+  <rect x="300" y="132" width="100" height="8" rx="3" fill="#e0e0ea"/>
   <rect x="300" y="132" width="82" height="8" rx="3" fill="#854F0B" opacity="0.8"/>
 
   <!-- Rank 2: Points -->
-  <rect x="30" y="178" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
-  <text x="54" y="198" font-size="10" fill="#666">#2</text>
-  <text x="80" y="198" font-size="12" font-weight="500" fill="#9090a8">Shop with Points</text>
-  <text x="80" y="216" font-size="9" fill="#666">CTR 0.78 · LTV 0.8× · score 0.780</text>
-  <rect x="300" y="190" width="100" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="300" y="190" width="78" height="8" rx="3" fill="#444"/>
+  <rect x="30" y="178" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="54" y="198" font-size="10" fill="#888899">#2</text>
+  <text x="80" y="198" font-size="12" font-weight="500" fill="#555566">Shop with Points</text>
+  <text x="80" y="216" font-size="9" fill="#888899">CTR 0.78 · LTV 0.8× · score 0.780</text>
+  <rect x="300" y="190" width="100" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="300" y="190" width="78" height="8" rx="3" fill="#c0c0cc"/>
 
   <!-- Rank 3: Card -->
-  <rect x="30" y="236" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
-  <text x="54" y="256" font-size="10" fill="#666">#3</text>
-  <text x="80" y="256" font-size="12" font-weight="500" fill="#9090a8">Pay with Card</text>
-  <text x="80" y="274" font-size="9" fill="#666">CTR 0.61 · LTV 1.2× · score 0.610</text>
-  <rect x="300" y="248" width="100" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="300" y="248" width="61" height="8" rx="3" fill="#444"/>
+  <rect x="30" y="236" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="54" y="256" font-size="10" fill="#888899">#3</text>
+  <text x="80" y="256" font-size="12" font-weight="500" fill="#555566">Pay with Card</text>
+  <text x="80" y="274" font-size="9" fill="#888899">CTR 0.61 · LTV 1.2× · score 0.610</text>
+  <rect x="300" y="248" width="100" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="300" y="248" width="61" height="8" rx="3" fill="#c0c0cc"/>
 
   <!-- Rank 4: BNPL -->
-  <rect x="30" y="294" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
-  <text x="54" y="314" font-size="10" fill="#666">#4</text>
-  <text x="80" y="314" font-size="12" font-weight="500" fill="#9090a8">Split Pay (BNPL)</text>
-  <text x="80" y="332" font-size="9" fill="#666">CTR 0.55 · LTV 1.8× · score 0.550</text>
-  <rect x="300" y="306" width="100" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="300" y="306" width="55" height="8" rx="3" fill="#444"/>
+  <rect x="30" y="294" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="54" y="314" font-size="10" fill="#888899">#4</text>
+  <text x="80" y="314" font-size="12" font-weight="500" fill="#555566">Split Pay (BNPL)</text>
+  <text x="80" y="332" font-size="9" fill="#888899">CTR 0.55 · LTV 1.8× · score 0.550</text>
+  <rect x="300" y="306" width="100" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="300" y="306" width="55" height="8" rx="3" fill="#c0c0cc"/>
 
   <!-- Rank 5: Visa -->
-  <rect x="30" y="352" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
-  <text x="54" y="372" font-size="10" fill="#55556a">#5</text>
-  <text x="80" y="372" font-size="12" font-weight="400" fill="#666">Meridian Visa</text>
-  <text x="80" y="390" font-size="9" fill="#55556a">CTR 0.38 · LTV 4.0× · score 0.380</text>
-  <rect x="300" y="364" width="100" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="300" y="364" width="38" height="8" rx="3" fill="#333"/>
+  <rect x="30" y="352" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="54" y="372" font-size="10" fill="#666677">#5</text>
+  <text x="80" y="372" font-size="12" font-weight="400" fill="#888899">Meridian Visa</text>
+  <text x="80" y="390" font-size="9" fill="#666677">CTR 0.38 · LTV 4.0× · score 0.380</text>
+  <rect x="300" y="364" width="100" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="300" y="364" width="38" height="8" rx="3" fill="#d0d0dc"/>
 
   <!-- Rank 6: Referral -->
-  <rect x="30" y="410" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
-  <text x="54" y="430" font-size="10" fill="#55556a">#6</text>
-  <text x="80" y="430" font-size="12" font-weight="400" fill="#666">Visa Referral</text>
-  <text x="80" y="448" font-size="9" fill="#55556a">CTR 0.31 · LTV 3.5× · score 0.310</text>
-  <rect x="300" y="422" width="100" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="300" y="422" width="31" height="8" rx="3" fill="#333"/>
+  <rect x="30" y="410" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="54" y="430" font-size="10" fill="#666677">#6</text>
+  <text x="80" y="430" font-size="12" font-weight="400" fill="#888899">Visa Referral</text>
+  <text x="80" y="448" font-size="9" fill="#666677">CTR 0.31 · LTV 3.5× · score 0.310</text>
+  <rect x="300" y="422" width="100" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="300" y="422" width="31" height="8" rx="3" fill="#d0d0dc"/>
 
   <!-- CTR × LTV RANKED LIST -->
   <!-- Rank 1: Visa (0.38 × 4.0 = 1.52) -->
-  <rect x="480" y="120" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#534AB7" stroke-width="1.5"/>
-  <text x="504" y="140" font-size="10" fill="#AFA9EC">#1</text>
-  <text x="530" y="140" font-size="12" font-weight="600" fill="#CECBF6">Meridian Visa</text>
-  <text x="530" y="158" font-size="9" fill="#AFA9EC">CTR 0.38 · LTV 4.0× · score 1.520</text>
-  <rect x="730" y="132" width="120" height="8" rx="3" fill="#1f1f2e"/>
+  <rect x="480" y="120" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#534AB7" stroke-width="1.5"/>
+  <text x="504" y="140" font-size="10" fill="#4a41b0">#1</text>
+  <text x="530" y="140" font-size="12" font-weight="600" fill="#3a30a0">Meridian Visa</text>
+  <text x="530" y="158" font-size="9" fill="#4a41b0">CTR 0.38 · LTV 4.0× · score 1.520</text>
+  <rect x="730" y="132" width="120" height="8" rx="3" fill="#e0e0ea"/>
   <rect x="730" y="132" width="120" height="8" rx="3" fill="#534AB7" opacity="0.9"/>
 
   <!-- Rank 2: Referral (0.31 × 3.5 = 1.085) -->
-  <rect x="480" y="178" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#534AB7" stroke-width="1"/>
-  <text x="504" y="198" font-size="10" fill="#7F77DD">#2</text>
-  <text x="530" y="198" font-size="12" font-weight="500" fill="#AFA9EC">Visa Referral</text>
-  <text x="530" y="216" font-size="9" fill="#7F77DD">CTR 0.31 · LTV 3.5× · score 1.085</text>
-  <rect x="730" y="190" width="120" height="8" rx="3" fill="#1f1f2e"/>
+  <rect x="480" y="178" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#534AB7" stroke-width="1"/>
+  <text x="504" y="198" font-size="10" fill="#4a41b0">#2</text>
+  <text x="530" y="198" font-size="12" font-weight="500" fill="#4a41b0">Visa Referral</text>
+  <text x="530" y="216" font-size="9" fill="#4a41b0">CTR 0.31 · LTV 3.5× · score 1.085</text>
+  <rect x="730" y="190" width="120" height="8" rx="3" fill="#e0e0ea"/>
   <rect x="730" y="190" width="86" height="8" rx="3" fill="#534AB7" opacity="0.7"/>
 
   <!-- Rank 3: BNPL (0.55 × 1.8 = 0.99) -->
-  <rect x="480" y="236" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#185FA5" stroke-width="1"/>
-  <text x="504" y="256" font-size="10" fill="#85B7EB">#3</text>
-  <text x="530" y="256" font-size="12" font-weight="500" fill="#B5D4F4">Split Pay (BNPL)</text>
-  <text x="530" y="274" font-size="9" fill="#85B7EB">CTR 0.55 · LTV 1.8× · score 0.990</text>
-  <rect x="730" y="248" width="120" height="8" rx="3" fill="#1f1f2e"/>
+  <rect x="480" y="236" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#185FA5" stroke-width="1"/>
+  <text x="504" y="256" font-size="10" fill="#1a5a9a">#3</text>
+  <text x="530" y="256" font-size="12" font-weight="500" fill="#1a5a9a">Split Pay (BNPL)</text>
+  <text x="530" y="274" font-size="9" fill="#1a5a9a">CTR 0.55 · LTV 1.8× · score 0.990</text>
+  <rect x="730" y="248" width="120" height="8" rx="3" fill="#e0e0ea"/>
   <rect x="730" y="248" width="78" height="8" rx="3" fill="#185FA5" opacity="0.8"/>
 
   <!-- Rank 4: Card (0.61 × 1.2 = 0.732) -->
-  <rect x="480" y="294" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#444" stroke-width="1"/>
-  <text x="504" y="314" font-size="10" fill="#666">#4</text>
-  <text x="530" y="314" font-size="12" font-weight="500" fill="#9090a8">Pay with Card</text>
-  <text x="530" y="332" font-size="9" fill="#666">CTR 0.61 · LTV 1.2× · score 0.732</text>
-  <rect x="730" y="306" width="120" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="730" y="306" width="58" height="8" rx="3" fill="#444"/>
+  <rect x="480" y="294" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="504" y="314" font-size="10" fill="#888899">#4</text>
+  <text x="530" y="314" font-size="12" font-weight="500" fill="#555566">Pay with Card</text>
+  <text x="530" y="332" font-size="9" fill="#888899">CTR 0.61 · LTV 1.2× · score 0.732</text>
+  <rect x="730" y="306" width="120" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="730" y="306" width="58" height="8" rx="3" fill="#c0c0cc"/>
 
   <!-- Rank 5: Gift Card (0.82 × 1.0 = 0.82 → actually 5th) -->
-  <rect x="480" y="352" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
-  <text x="504" y="372" font-size="10" fill="#55556a">#5</text>
-  <text x="530" y="372" font-size="12" font-weight="400" fill="#666">Gift Card</text>
-  <text x="530" y="390" font-size="9" fill="#55556a">CTR 0.82 · LTV 1.0× · score 0.820</text>
-  <rect x="730" y="364" width="120" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="730" y="364" width="65" height="8" rx="3" fill="#333"/>
+  <rect x="480" y="352" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="504" y="372" font-size="10" fill="#666677">#5</text>
+  <text x="530" y="372" font-size="12" font-weight="400" fill="#888899">Gift Card</text>
+  <text x="530" y="390" font-size="9" fill="#666677">CTR 0.82 · LTV 1.0× · score 0.820</text>
+  <rect x="730" y="364" width="120" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="730" y="364" width="65" height="8" rx="3" fill="#d0d0dc"/>
 
   <!-- Rank 6: Points (0.78 × 0.8 = 0.624) -->
-  <rect x="480" y="410" width="390" height="48" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
-  <text x="504" y="430" font-size="10" fill="#55556a">#6</text>
-  <text x="530" y="430" font-size="12" font-weight="400" fill="#666">Shop with Points</text>
-  <text x="530" y="448" font-size="9" fill="#55556a">CTR 0.78 · LTV 0.8× · score 0.624</text>
-  <rect x="730" y="422" width="120" height="8" rx="3" fill="#1f1f2e"/>
-  <rect x="730" y="422" width="50" height="8" rx="3" fill="#333"/>
+  <rect x="480" y="410" width="390" height="48" rx="6" fill="#f0f0f8" stroke="#ccccdd" stroke-width="1"/>
+  <text x="504" y="430" font-size="10" fill="#666677">#6</text>
+  <text x="530" y="430" font-size="12" font-weight="400" fill="#888899">Shop with Points</text>
+  <text x="530" y="448" font-size="9" fill="#666677">CTR 0.78 · LTV 0.8× · score 0.624</text>
+  <rect x="730" y="422" width="120" height="8" rx="3" fill="#e0e0ea"/>
+  <rect x="730" y="422" width="50" height="8" rx="3" fill="#d0d0dc"/>
 
   <!-- Swap arrows between the two rankings -->
   <!-- Visa: moves from #5 to #1 -->
-  <path d="M 420 376 Q 450 144 480 144" fill="none" stroke="#6c63ff" stroke-width="1" stroke-dasharray="3 2" opacity="0.6"/>
+  <path d="M 420 376 Q 450 144 480 144" fill="none" stroke="#4a40cc" stroke-width="1" stroke-dasharray="3 2" opacity="0.6"/>
   <!-- Gift card: moves from #1 to #5 -->
   <path d="M 420 144 Q 450 376 480 376" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="3 2" opacity="0.4"/>
 </svg>
