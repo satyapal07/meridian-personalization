@@ -235,7 +235,7 @@ meridian-personalization/
 
 **Satya** — Senior Product Manager with four years building ML-powered personalization and payment systems at scale. Currently exploring AI PM roles at companies building at the intersection of commerce, payments, and machine learning.
 
-[LinkedIn](https://linkedin.com/in/your-profile)
+[LinkedIn](https://www.linkedin.com/in/satya-pal/)
 
 ---
 
